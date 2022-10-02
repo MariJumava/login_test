@@ -1,0 +1,53 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "react-app",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "prettier"
+  ],
+  "parserOptions": {
+    "project": ["./tsconfig.json"],
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
+  "plugins": ["react"],
+  "rules": {
+    "import/extensions": "off",
+    "object-curly-spacing": ["error", "always"],
+    "no-unused-expressions": "off",
+    "import/no-cycle": 0,
+    "no-plusplus": 0,
+    "no-else-return": 0,
+    "no-nested-ternary": 0,
+    "no-param-reassign": 0,
+    "no-unused-vars": 0,
+    "no-debugger": 0,
+    "import/prefer-default-export": 0,
+    "react/jsx-props-no-spreading": "off",
+    "arrow-body-style": "off",
+    "jsx-quotes": [1, "prefer-double"]
+  }
+}
