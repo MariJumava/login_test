@@ -9,7 +9,7 @@ import { Steps } from './helpers/steps';
 import { RootState } from './redux';
 
 const StyledWrap = styled.div`
-  min-height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background: linear-gradient(
